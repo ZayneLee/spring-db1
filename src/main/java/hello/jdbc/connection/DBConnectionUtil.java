@@ -17,7 +17,7 @@ public class DBConnectionUtil {
         try {
             Connection connection = DriverManager.getConnection(URL, USERNAME, PASSWORD);
             log.info("get connection={}, class={}", connection, connection.getClass());
-
+            
             return connection;
 
         } catch (SQLException e) {
